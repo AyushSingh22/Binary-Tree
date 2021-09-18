@@ -1,5 +1,3 @@
-
-
 #include <iostream.h>
 #include <conio.h>
 #include <stdlib.h>
@@ -58,46 +56,34 @@ Select any one
                     curr->value=temp->value;
                     curr->left=NULL;
                     curr->right=NULL;
-                    cout<<"  The root node is added
-";
+                    cout<<"  The root node is added";
                    }
                   else
                     v=addnode(curr,temp);
                   if(v==1)
-                    cout<<"  The node is added to the left
-";
+                    cout<<"  The node is added to the left";
                   else if(v==2)
-                    cout<<"  The node is added to the right
-";
+                    cout<<"  The node is added to the right";
                   else if(v==3)
-                    cout<<"  The same value exists
-";
+                    cout<<"  The same value exists";
                   break;
     case '2':
                    v=inorder(curr);
                    if(v==0)
-                   cout<<"   
-The tree is empty
-";
+                   cout<<"The tree is empty";
                    break;
     case '3':
                    v=preorder(curr);
                    if(v==0)
-                   cout<<"   
-The tree is empty
-";
+                   cout<<"The tree is empty";
                    break;
     case '4':
                    v=postorder(curr);
                    if(v==0)
-                   cout<<"   
-The tree is empty
-";
+                   cout<<"The tree is empty";
                    break;
     default:
-                   cout<<"   
-Invalid entry
-";
+                   cout<<"Invalid entry";
                    break;
     }
    }while(c!='0');
